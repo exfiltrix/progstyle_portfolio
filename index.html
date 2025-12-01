@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exfiltrix | Portfolio</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <div id="command-palette" class="palette-overlay" aria-modal="true" role="dialog" aria-hidden="true">
+        <div class="palette-content">
+            <input type="text" id="palette-input" placeholder="Введите команду: about, stack, projects, contact"
+                aria-label="Командная палитра">
+            <div id="palette-suggestions" class="palette-suggestions">
+                <p>Ctrl+K для закрытия.</p>
+            </div>
+        </div>
+    </div>
+
+    <header id="header">
+        <div class="container header-content">
+            <div class="logo">
+                <a href="#hero">Portfolio</a>
+            </div>
+            <nav>
+                <a href="#hero">About</a>
+                <a href="#stack">Stack</a>
+                <a href="#projects">Projects</a>
+                <a href="#opensource">Open Source</a>
+                <a href="#contact">Contact</a>
+            </nav>
+            <button id="palette-toggle" class="btn-palette" aria-label="Открыть командную палитру (Ctrl+K)">
+                <span class="icon">⌘</span>K
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero section-padding">
+            <div class="container hero-grid">
+                <div class="hero-info fade-in-up">
+                    <h1 class="color-primary">Exfiltrix</h1>
+                    <p class="role-tag">// Web Developer / Graphic Designer / UI/UX Designer</p>
+                    <p class="tagline">**Мирмахмудов Фаррух** — Middle-специалист, фокусируюсь на создании чистого кода
+                        и продуманного дизайна.</p>
+                    <div class="hero-actions">
+                        <a href="https://github.com/exfiltrix" class="btn btn-primary" aria-label="Перейти на GitHub"
+                            target="_blank">View on GitHub</a>
+                        <a href="#contact" class="btn btn-secondary">Contact</a>
+                    </div>
+                </div>
+                <div class="terminal-block fade-in-up delay-2">
+                    <div class="terminal-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                        <span class="terminal-title">~/console</span>
+                    </div>
+                    <div class="terminal-body">
+                        <pre>
+<span class="command">$ whoami</span>
+Мирмахмудов Фаррух — Middle Developer & Designer
+
+<span class="command">$ stack --main</span>
+html, css, javascript, python, sql
+
+<span class="command">$ ls projects/*.md</span>
+neuro-presentation.md minimal-bizplan.md browser-ide.md
+<span class="cursor" id="cursor">|</span>
+                        </pre>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="stack" class="section-padding">
+            <div class="container">
+                <h2 class="section-title fade-in-up">Tech Stack <span class="color-primary">// dependencies.json</span>
+                </h2>
+
+                <div class="stack-groups">
+                    <div class="stack-group fade-in-up delay-1">
+                        <h3>Languages</h3>
+                        <div class="stack-grid">
+                            <span class="stack-item">HTML <span class="tag tag-core">Core</span></span>
+                            <span class="stack-item">CSS <span class="tag tag-core">Core</span></span>
+                            <span class="stack-item">JavaScript <span class="tag tag-core">Core</span></span>
+                            <span class="stack-item">Python <span class="tag tag-confident">Confident</span></span>
+                            <span class="stack-item">SQL <span class="tag tag-confident">Confident</span></span>
+                        </div>
+                    </div>
+
+                    <div class="stack-group fade-in-up delay-2">
+                        <h3>Tools / Design</h3>
+                        <div class="stack-grid">
+                            <span class="stack-item">Adobe Photoshop <span class="tag tag-core">Design</span></span>
+                            <span class="stack-item">Adobe Illustrator <span
+                                    class="tag tag-confident">Design</span></span>
+                            <span class="stack-item">Figma <span class="tag tag-core">UI/UX</span></span>
+                            <span class="stack-item">Linux Administration <span
+                                    class="tag tag-confident">DevOps</span></span>
+                            <span class="stack-item">Git / GitHub <span class="tag tag-core">VCS</span></span>
+                            <span class="stack-item">VS Code <span class="tag tag-core">IDE</span></span>
+                            <span class="stack-item">Vim <span class="tag tag-learning">CLI</span></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section-padding">
+            <div class="container">
+                <h2 class="section-title fade-in-up">Featured Projects <span class="color-primary">// commits.log</span>
+                </h2>
+                <div class="projects-grid">
+
+                    <article class="project-card fade-in-up delay-1" tabindex="0">
+                        <h3>Project: <span class="color-primary">Презентация нейросети</span></h3>
+                        <p class="description">Сайт с большим количеством анимаций и интерактивов, созданный для
+                            эффектной презентации продукта AI/ML.</p>
+                        <p class="stack-list">Stack: JS (ES6+), CSS Grid/Flex, GSAP (опционально), UI/UX Design.</p>
+                        <div class="project-actions">
+                            <a href="#" class="btn-link" aria-label="Проект Презентация нейросети на GitHub">GitHub
+                                →</a>
+                            <a href="#" class="btn-link" aria-label="Демо Презентация нейросети">Demo →</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card fade-in-up delay-2" tabindex="0">
+                        <h3>Project: <span class="color-primary">Сайт для бизнес-плана</span></h3>
+                        <p class="description">Строгий и стильный минималистичный сайт-презентация, акцентирующий
+                            внимание на ключевых показателях и целях.</p>
+                        <p class="stack-list">Stack: HTML, Sass/CSS, Figma, Адаптивный дизайн.</p>
+                        <div class="project-actions">
+                            <a href="#" class="btn-link" aria-label="Проект Сайт для бизнес-плана на GitHub">GitHub
+                                →</a>
+                            <a href="#" class="btn-link" aria-label="Демо Сайт для бизнес-плана">Demo →</a>
+                        </div>
+                    </article>
+
+                    <article class="project-card fade-in-up delay-3" tabindex="0">
+                        <h3>Project: <span class="color-primary">Онлайн рабочая среда</span></h3>
+                        <p class="description">Прототип мини-IDE в браузере с поддержкой исполнения кода на основе
+                            технологий Web Worker и Code Mirror (концепт).</p>
+                        <p class="stack-list">Stack: JavaScript, Web Workers, HTML, CSS (IDE-style).</p>
+                        <div class="project-actions">
+                            <a href="#" class="btn-link" aria-label="Проект Онлайн рабочая среда на GitHub">GitHub →</a>
+                            <a href="#" class="btn-link" aria-label="Демо Онлайн рабочая среда">Demo →</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="opensource" class="section-padding">
+            <div class="container">
+                <h2 class="section-title fade-in-up">Open Source <span class="color-primary">// activity.json</span>
+                </h2>
+                <div class="code-output-block fade-in-up delay-1">
+                    <pre class="json-code">
+<span class="json-bracket">{</span>
+  <span class="json-key">"repo"</span>: <span class="json-string">"figma-to-html-template"</span>,
+  <span class="json-key">"description"</span>: <span class="json-string">"Semantic HTML/CSS boilerplate optimized for Figma design hand-off."</span>,
+  <span class="json-key">"role"</span>: <span class="json-value">"author"</span>,
+  <span class="json-key">"stack"</span>: <span class="json-array">[<span class="json-string">"HTML5"</span>, <span class="json-string">"CSS3"</span>, <span class="json-string">"a11y"</span>]</span>,
+  <span class="json-key">"link"</span>: <span class="json-string">"https://github.com/..."</span>
+<span class="json-bracket">}</span>,
+<span class="json-bracket">{</span>
+  <span class="json-key">"repo"</span>: <span class="json-string">"python-cli-toolkit"</span>,
+  <span class="json-key">"description"</span>: <span class="json-string">"A small collection of reusable Python scripts for system administration tasks."</span>,
+  <span class="json-key">"role"</span>: <span class="json-value">"contributor"</span>,
+  <span class="json-key">"stack"</span>: <span class="json-array">[<span class="json-string">"Python"</span>, <span class="json-string">"Bash"</span>, <span class="json-string">"Linux"</span>]</span>,
+  <span class="json-key">"link"</span>: <span class="json-string">"https://github.com/..."</span>
+<span class="json-bracket">}</span>
+                    </pre>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section-padding">
+            <div class="container contact-grid">
+                <h2 class="section-title fade-in-up">Contact <span class="color-primary">// connect.sh</span></h2>
+                <div class="contact-content-wrapper fade-in-up delay-1">
+                    <div class="contact-photo">
+                        <img src="assets/images/me.png" alt="Фотография Мирмахмудова Фарруха" loading="lazy">
+                    </div>
+                    <div class="contact-block">
+                        <p>Я открыт для новых, технически сложных проектов в области веб-разработки и дизайна. Готов к
+                            сотрудничеству!</p>
+                        <ul class="contact-list">
+                            <li><span class="color-primary">Email:</span> <a href="mailto:exfiltrix@gmail.com"
+                                    target="_blank">exfiltrix@gmail.com</a></li>
+                            <li><span class="color-primary">GitHub:</span> <a href="https://github.com/exfiltrix"
+                                    target="_blank">/Exfiltrix</a></li>
+                            <li><span class="color-primary">Telegram:</span> <a href="https://t.me/exfiltrix"
+                                    target="_blank">@Exfiltrix_dev</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Exfiltrix. <span class="color-primary">Designed with code.</span></p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
